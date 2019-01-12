@@ -1,0 +1,44 @@
+<html>                                                                                                                                                                                                                                                     
+	<head>
+		<title>CRASH1337</title>
+		<link rel="icon" type="image/ico" href="1.ico" sizes="45x48">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">		
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>			
+		<script src="https://use.fontawesome.com/a5e30dd034.js"></script>
+		<link rel="stylesheet" href="css/style.css" >
+		
+		
+	</head>
+    
+	<body class="loading">		
+		<div id="wrapper">
+			<video autoplay="1" loop="" id="player">
+            <source src="vid/6.mp4" type="video/mp4">
+             </video> 		    
+			<div id="overlay"></div>
+			<div id="main">				
+					<header id="header">				
+                                                <h1 id="nickname">CRASH1337</h1>
+						
+						<nav>
+							<ul>	
+<li><a href="https://vk.com/csgo_hacks1337"  target="_blank" class="fa fa-vk"></a></li>	
+<li><a href="http://steamcommunity.com/profiles/76561197960402791"  target="_blank" class="fa fa-steam-square" aria-hidden="true"></a></li>
+<a class="fa fa-pause fa-3x" type="button" id="mybtn" style="font-size: 1em;"</a>
+<a class="fa fa-play fa-33x" type="button" id="mybtn2" style="font-size: 1em;"</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+
+
+<script>
+document.getElementById("mybtn2").onclick = function()
+{
+      var myaudio = document.getElementById("player");
+      document.getElementById("player").play();
+}
+document.getElementById("mybtn").onclick = function()
+{
+      var myaudio = document.getElementById("player");
+      document.getElementById("player").pause();
+}
+</script>
+
