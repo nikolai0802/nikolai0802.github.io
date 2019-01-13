@@ -134,6 +134,50 @@ a.big-background-btn {
     backface-visibility:hidden
 }
 
+/*video
+================================================== */
+.fullwidth-bg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+    overflow: hidden;
+    z-index: -100;
+}
+ 
+.fullwidth-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.video-layer{
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+ 
+.video-layer h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 70px;
+    margin-top:17%;
+}
+@media (max-width: 767px) {
+    .fullwidth-bg {
+        background: url('../images/sunset.jpg') center center / cover no-repeat;
+    }
+ 
+    .fullwidth-bg__video {
+        display: none;
+    }
+}
+
 
 
 /* ABOUT SECTION
