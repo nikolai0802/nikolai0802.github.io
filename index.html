@@ -51,7 +51,34 @@ document.oncontextmenu=new Function("return false")
 <div class="pattern"></div> 
 <div class="big-background-container">
     
-   
+<script src="js/jquery.js"></script>
+
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    var phrases = [
+        'Привет!',
+        'как твоя жизнь, бля',
+        'моя нихуя',
+        'и вообще здесь должен быть',
+        'интэрэсный текст',
+        'но мне лень придумывать',
+        ')00))000))))))0'];
+
+
+    var el = document.querySelector('.text');
+    var fx = new TextScramble(el);
+
+    var counter = 0;
+    var next = function next() {
+        fx.setText(phrases[counter]).then(function () {
+            //скорость
+            setTimeout(next, 1000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+
+    next();
+</script>    
         
     
 <h1 class="big-background-title">Nik Fantom</h1>    
