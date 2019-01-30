@@ -46,7 +46,12 @@ document.oncontextmenu=new Function("return false")
     
 <section class="big-background">
     <style>
-    body { background: url(../images/fonsite.jpg); }
+    body { background: url(../images/fonsite.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+        }
         </style>
 //<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=9A4m0xzGOqM', containment:'body', autoPlay:true, mute:true, startAt:0, stopAt:180, stopMovieOnBlur:0, vol:100}"></a>
 <div class="pattern"></div> 
