@@ -10,6 +10,9 @@ body {
     width:100%;
     -webkit-font-smoothing:antialiased;
     -webkit-text-size-adjust:100%
+    font-family: 'Roboto Mono', monospace;
+    background: #212121;
+    height: 100%;
 }
 
 
@@ -277,7 +280,25 @@ a.about-section-btn {
     color:#bdc3c7
 }
 
+/* text
+================================================== */
+.container {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
+.text {
+    font-weight: 100;
+    font-size: 28px;
+    color: #fafafa;
+}
+
+.dud {
+    color: #757575;
+}
 
 
 /* MEDIA QUERIES
